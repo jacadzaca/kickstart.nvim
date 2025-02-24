@@ -798,7 +798,7 @@ require('lazy').setup({
           sorter = 'case_sensitive',
         },
         view = {
-          width = 15,
+          width = 20,
         },
         renderer = {
           group_empty = true,
@@ -807,6 +807,14 @@ require('lazy').setup({
           dotfiles = true,
         },
       }
+    end,
+  },
+  {
+    'akinsho/bufferline.nvim',
+    version = '*',
+    dependencies = 'nvim-tree/nvim-web-devicons',
+    config = function()
+      require('bufferline').setup {}
     end,
   },
 
